@@ -47,7 +47,7 @@ dependencies {
     compile 'com.android.support:design:24.0.0'
     compile 'com.android.support:cardview-v7:24.0.0'
     compile 'com.android.support:recyclerview-v7:24.0.0'
-    compile project(':stepview')
+
     //注解库
     compile 'com.jakewharton:butterknife:8.5.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
@@ -70,6 +70,7 @@ dependencies {
     //实现类似微信WebView的上拉下拉弹跳效果和iOS的ListView的果冻效果
     compile 'homhomlin.lib:sldinglayout:0.9.0'
     compile project(':FlycoTablayout_Lib')
+    compile project(':stepview')
     //Rxandroid
 
 }
