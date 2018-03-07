@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+
+    >
+    <TextView
+        android:id="@+id/title"
+        android:textColor="#333333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="标题"
+        android:textSize="16sp"
+        android:padding="10dp"
+       android:layout_centerHorizontal="true"
+
+        />
+    <View
+        android:id="@+id/view1"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#F3EBEB"
+        ></View>
+    <TextView
+        android:id="@+id/neirong"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:text="内容"
+        android:padding="30dp"
+         android:layout_below="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:id="@+id/view2"
+        android:layout_below="@+id/neirong"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#F3EBEB"
+        ></View>
+     <TextView
+
+         android:id="@+id/config"
+         android:textColor="#333333"
+         android:textSize="16sp"
+         android:gravity="center"
+         android:layout_below="@+id/view2"
+         android:text="确定"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:padding="10dp"
+         />
+
+
+
+</RelativeLayout>

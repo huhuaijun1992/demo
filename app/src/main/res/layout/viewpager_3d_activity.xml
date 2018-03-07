@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:background="@color/activty_bg"
+    >
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="基本效果"
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="10sp"
+        />
+     <Button
+         android:layout_below="@id/button1"
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RotateDown"
+        android:background="@color/white"
+         android:layout_marginTop="10sp"
+        />
+    <Button
+        android:layout_below="@id/button2"
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RotateUp"
+        android:background="@color/white"
+        android:layout_marginTop="10sp"
+        />
+    <Button
+        android:layout_below="@id/button3"
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RotateY"
+        android:background="@color/white"
+        android:layout_marginTop="10sp"
+        />
+    <Button
+        android:layout_below="@id/button4"
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2侧透明"
+        android:background="@color/white"
+        android:layout_marginTop="10sp"
+        />
+    <Button
+        android:layout_below="@id/button5"
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="中间突出"
+        android:background="@color/white"
+        android:layout_marginTop="10sp"
+        />
+
+
+    <com.example.admin.demo.widget_collect.viewpager_collect.autoviewpager.view.AutoScrollViewPager
+        android:layout_below="@id/button6"
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:clipChildren="false"
+        android:layout_marginTop="10dp"
+        >
+    </com.example.admin.demo.widget_collect.viewpager_collect.autoviewpager.view.AutoScrollViewPager>
+
+</RelativeLayout>

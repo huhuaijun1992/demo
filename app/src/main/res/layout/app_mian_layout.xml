@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/activty_bg"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    >
+    <Button
+        android:id="@+id/stepview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="stepview(仿快递步骤流程)"
+        android:background="@color/white"
+        />
+    <Button
+        android:id="@+id/yidongview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="可移动的view"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        />
+    <Button
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="仿钉钉水印背景效果"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        />
+
+</LinearLayout>

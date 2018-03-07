@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.admin.demo">
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme1">
+        <activity android:name=".splash.SplashActivity"
+            android:theme="@style/splashTheme"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".ProductHomeActivity">
+        </activity>
+        <activity android:name=".list.ListMain" />
+        <activity android:name=".list.horizontalListView.activity.HorizontalListViewActivity"></activity>
+        <activity android:name=".flowlayout.FlowLayoutActivity"/>
+        <activity android:name=".expandableTextView.Activity.ExpandableTextViewActivity"></activity>
+        <activity android:name=".widget_collect.viewpager_collect.ViewPagerMainActivity"></activity>
+        <activity android:name=".widget_collect.viewpager_collect.autoviewpager.activity.Auto3DViewPagerActivity"></activity>
+        <activity android:name=".thridwidget.data_time.DataMainActivity"></activity>
+        <activity android:name=".study.StudyMianActivity"></activity>
+        <activity android:name=".study.service.ServiceMianActivity"></activity>
+        <service android:name=".study.service.ServiceTest"></service>
+        <activity android:name=".list.pinned_section_listview.PinnerSectionListviewActivity"></activity>
+        <activity android:name=".widget_collect.imageview_collect.NBLodingActivity"/>
+        <activity android:name=".thridwidget.stepview.XiaoguoFragmentActivity"></activity>
+        <activity android:name=".moonview.ViewSlideActivity"/>
+        <activity android:name=".APPBarColection"/>
+        <activity android:name=".test.TestActivity"/>
+        <activity android:name=".widget_collect.WidgetCollectActivity"/>
+        <activity android:name=".thridwidget.ThirdWidgetCollectActivity"/>
+        <activity android:name=".permission.PerimissionActivity"/>
+        <activity android:name=".thridwidget.xtablayout.XtablayoutActivity" />
+        <activity android:name=".thridwidget.roll.TextRollActivity"/>
+        <activity android:name=".thridwidget.roll.IMageRollActivity"/>
+        //帮助导航
+        <activity android:name=".thridwidget.guid.aty.GuideHomeActivity"/>
+        <activity android:name=".thridwidget.guid.aty.FragActivity"/>
+        <activity android:name=".thridwidget.guid.aty.FullActivity"/>
+        <activity android:name=".thridwidget.guid.aty.MyListActivity"/>
+        <activity android:name=".thridwidget.guid.aty.SimpleGuideViewActivity"/>
+        <activity android:name=".thridwidget.guid.aty.ViewActivity"/>
+        <activity android:name=".thridwidget.adverment.AdvermentActivity"/>
+        <activity android:name=".widget_collect.textview_collect.TextViewCollection"/>
+        //节操播放器
+        <activity android:name=".thridwidget.jiecaoplayer.JieCaoMainActivity"/>
+        <activity android:name=".thridwidget.jiecaoplayer.JiecaoListActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".thridwidget.roll.PhotoActivity"/>
+        <activity android:name=".widget_collect.imageview_collect.ImageCollect"/>
+        <activity android:name=".widget_collect.imageview_collect.PhotoBrowser"/>
+        /自定义view学习/
+        <activity android:name=".study.definview.ViewStyleActivity"/>
+        <activity android:name=".study.definview.DefindviewStudyMainActivity"/>
+        //图片
+        <activity android:name=".widget_collect.imageview_collect.ComPressImageActivity"/>
+        <activity android:name=".widget_collect.imageview_collect.CropImageActivity"/>
+        //滑动
+        <activity android:name=".study.scrollview.ScollViewActivity"/>
+        <activity android:name=".study.scrollview.ScrollviewWithListernerActivity"/>
+        <activity android:name=".study.scrollview.ScollViewTopImage"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            />
+        <activity android:name=".thridwidget.slidinglayout.SlidingMainActivity" />
+        <activity android:name=".thridwidget.slidinglayout.ListViewActivity" />
+        <activity android:name=".thridwidget.slidinglayout.WebViewActivity" />
+
+        <activity android:name=".widget_collect.itemtouchhelperdemo.demochannel.ChannelActivity" />
+        <activity android:name=".widget_collect.popwindow_collect.PopwindowActivity" />
+        <activity android:name=".widget_collect.popwindow_collect.SecondActivity" />
+        <activity android:name=".widget_collect.textinputlayout.TextLayoutInputActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <SurfaceView
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+    <com.example.admin.demo.splash.FullScreenView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/video"
+        android:background="@color/color_white"
+        />
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:id="@+id/skip"
+        android:background="@drawable/splash_skip_btn_bg"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="40dp"
+        android:elevation="1dp"
+        />
+</RelativeLayout>

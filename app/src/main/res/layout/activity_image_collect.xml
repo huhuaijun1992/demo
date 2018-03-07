@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    >
+    <Button
+        android:id="@+id/photo_broaswer"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:text="图片浏览器" />
+    <Button
+        android:id="@+id/compress_image"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:text="图片压缩（CompressHelper库）" />
+    <Button
+        android:id="@+id/crop_image"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:text="图片剪裁（系统自带）" />
+
+</LinearLayout>

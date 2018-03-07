@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/black">
+
+    <com.example.admin.demo.thridwidget.photoView.galleryWidget.GalleryViewPager
+        android:id="@+id/picture_viewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+
+        />
+
+    <RelativeLayout
+        android:id="@+id/picture_top"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+       >
+
+        <RelativeLayout
+            android:id="@+id/picture_back"
+            android:layout_width="50dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/general_top_icons_selector">
+
+            <ImageView
+                android:layout_width="28dip"
+                android:layout_height="28dip"
+                android:layout_centerInParent="true"
+                android:background="@drawable/backbutton" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/picture_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="130dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/photo_bg_footer"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip">
+
+        <TextView
+            android:id="@+id/picture_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/picture_scroll"
+            android:layout_marginBottom="5dip"
+            android:layout_marginRight="20dip"
+            android:layout_toLeftOf="@+id/picture_count"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/picture_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/picture_scroll"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dip"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <ScrollView
+            android:id="@+id/picture_scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="80dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dip">
+
+            <TextView
+                android:id="@+id/picture_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>
