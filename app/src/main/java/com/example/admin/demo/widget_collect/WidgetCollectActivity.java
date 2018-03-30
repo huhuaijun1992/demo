@@ -56,7 +56,7 @@ public class WidgetCollectActivity extends Activity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.textinputlayout,R.id.PopupWindow_collect, R.id.textview_collect, R.id.image_collect, R.id.tablayout_collect, R.id.viewpager_collect, R.id.scroll_collect, R.id.recyclerview_collect})
+    @OnClick({R.id.textinputlayout,R.id.PopupWindow_collect, R.id.textview_collect, R.id.image_collect, R.id.viewpager_collect, R.id.scroll_collect, R.id.recyclerview_collect})
     public void onViewClicked(View view) {
         Intent intent = new Intent();
         switch (view.getId()) {
@@ -65,8 +65,6 @@ public class WidgetCollectActivity extends Activity {
                 break;
             case R.id.image_collect:
                 intent.setClass(this, ImageCollect.class);
-                break;
-            case R.id.tablayout_collect:
                 break;
             case R.id.viewpager_collect:
                 intent.setClass(this, Auto3DViewPagerActivity.class);
