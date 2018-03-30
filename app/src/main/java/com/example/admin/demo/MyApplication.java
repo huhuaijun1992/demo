@@ -6,6 +6,8 @@ import android.util.Log;
 
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
+import com.vondear.rxtools.RxTextTool;
+import com.vondear.rxtools.RxTool;
 
 /**
  * Created by admin on 2017/9/4.
@@ -17,6 +19,7 @@ public class MyApplication extends Application {
     public void onCreate() {
         super.onCreate();
         ImageLoader.getInstance().init(ImageLoaderConfiguration.createDefault(this));
+        RxTool.init(this);
     }
     @Override
     public void onTerminate() {

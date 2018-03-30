@@ -1,1 +1,1 @@
-include ':app', ':stepview', ':mylibrary','FlycoTablayout_Lib'
+include ':app', ':stepview','FlycoTablayout_Lib'

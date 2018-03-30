@@ -14,25 +14,11 @@ public class SlidingMainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sliding_main_actitivity);
-        Button webView = (Button) this.findViewById(R.id.btnWebView);
-        webView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(SlidingMainActivity.this, WebViewActivity.class));
-            }
-        });
         Button listView = (Button)this.findViewById(R.id.btnListView);
         listView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(SlidingMainActivity.this,ListViewActivity.class));
-            }
-        });
-        Button recyclerView = (Button)this.findViewById(R.id.btnRecyclerView);
-        recyclerView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(SlidingMainActivity.this,RecyclerViewActivity.class));
             }
         });
     }

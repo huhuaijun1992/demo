@@ -12,6 +12,7 @@ import com.example.admin.demo.study.DialogFragment.DialogView;
 import com.example.admin.demo.study.definview.DefindviewStudyMainActivity;
 import com.example.admin.demo.study.service.ServiceMianActivity;
 import com.example.admin.demo.utils.LogUtils;
+import com.example.admin.demo.widget_collect.WidgetCollectActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -31,6 +32,12 @@ public class StudyMianActivity extends Activity implements DialogLister {
     Button dialogfragmentStudy;
     private Unbinder unbinder;
     DialogView dialogFragment;
+
+    public static  void enter(Activity activity){
+        Intent intent=new Intent();
+        intent.setClass(activity,StudyMianActivity.class);
+        activity.startActivity(intent);
+    }
   //我们
     @Override
     protected void onCreate(Bundle savedInstanceState) {

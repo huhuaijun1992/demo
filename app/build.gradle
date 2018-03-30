@@ -38,6 +38,7 @@ allprojects {
 }
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
@@ -70,8 +71,13 @@ dependencies {
     //实现类似微信WebView的上拉下拉弹跳效果和iOS的ListView的果冻效果
     compile 'homhomlin.lib:sldinglayout:0.9.0'
     compile project(':FlycoTablayout_Lib')
+    //步骤
     compile project(':stepview')
-    //Rxandroid
+
+    //沉浸式
+    provided 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+//    rxtool
+    compile 'com.github.vondear:RxTools:v1.7.7.3'//请替换成上方 JitPack 最新的版本号
 
 }
 

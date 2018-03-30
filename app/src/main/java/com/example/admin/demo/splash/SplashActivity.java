@@ -77,8 +77,14 @@ public class SplashActivity extends Activity {
         intent.setClass(SplashActivity.this, ProductHomeActivity.class);
         startActivity(intent);
         finish();
+
     }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        video.canPause();
+    }
 
     class Conunt extends CountDownTimer {
         public Conunt(long millisInFuture, long countDownInterval) {

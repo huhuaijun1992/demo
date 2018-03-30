@@ -19,7 +19,7 @@ public class HorizontalListViewActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_horizontallistview_activity_layout);
-    findview();
+       findview();
         adapter=new HorizontalListViewAdapter(images,this);
         horizontalListView.setAdapter(adapter);
 

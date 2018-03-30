@@ -3,18 +3,21 @@ package com.example.admin.demo.thridwidget;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
 import com.example.admin.demo.R;
 import com.example.admin.demo.flowlayout.FlowLayoutActivity;
 import com.example.admin.demo.permission.PerimissionActivity;
+import com.example.admin.demo.study.StudyMianActivity;
 import com.example.admin.demo.thridwidget.adverment.AdvermentActivity;
 import com.example.admin.demo.thridwidget.data_time.DataMainActivity;
 import com.example.admin.demo.thridwidget.guid.aty.GuideHomeActivity;
 import com.example.admin.demo.thridwidget.jiecaoplayer.JieCaoMainActivity;
 import com.example.admin.demo.thridwidget.roll.IMageRollActivity;
 import com.example.admin.demo.thridwidget.roll.TextRollActivity;
+import com.example.admin.demo.thridwidget.slidinglayout.ListViewActivity;
 import com.example.admin.demo.thridwidget.slidinglayout.SlidingMainActivity;
 import com.example.admin.demo.thridwidget.stepview.XiaoguoFragmentActivity;
 import com.example.admin.demo.thridwidget.xtablayout.XtablayoutActivity;
@@ -28,7 +31,7 @@ import butterknife.OnClick;
  * Created by admin on 2017/7/4.
  */
 
-public class ThirdWidgetCollectActivity extends Activity {
+public class ThirdWidgetCollectActivity extends AppCompatActivity {
     @BindView(R.id.folwlayout)
     Button folwlayout;
     @BindView(R.id.stepview)
@@ -55,7 +58,11 @@ public class ThirdWidgetCollectActivity extends Activity {
     Button player;
     @BindView(R.id.sliding)
     Button sliding;
-
+    public static  void enter(Activity activity){
+        Intent intent=new Intent();
+        intent.setClass(activity,ThirdWidgetCollectActivity.class);
+        activity.startActivity(intent);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -104,7 +111,7 @@ public class ThirdWidgetCollectActivity extends Activity {
                 intent.setClass(this, JieCaoMainActivity.class);
                 break;
             case R.id.sliding:
-                intent.setClass(this, SlidingMainActivity.class);
+                intent.setClass(this, ListViewActivity.class);
                 break;
 
         }

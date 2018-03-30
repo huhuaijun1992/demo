@@ -43,6 +43,11 @@ public class WidgetCollectActivity extends Activity {
     Button PopupWindowCollect;
     @BindView(R.id.textinputlayout)
     Button textinputlayout;
+    public static  void enter(Activity activity){
+        Intent intent=new Intent();
+        intent.setClass(activity,WidgetCollectActivity.class);
+        activity.startActivity(intent);
+    }
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

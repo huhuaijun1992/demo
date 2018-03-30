@@ -23,7 +23,6 @@ public abstract class BaseActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         TAG = getClass().getName();
-        StatusBarUtils.setColor(this, R.color.color1);
 }
 
     /**

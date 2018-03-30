@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutAnimation="@anim/view_enter_in"
+    >
+
+    <TextView
+
+        android:id="@+id/tween"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View动画之Tween动画"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:background="@color/SUCCESS_COLOR"
+        android:layout_marginTop="16dp"
+
+        />
+    <TextView
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View动画之frame动画"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:background="@color/SUCCESS_COLOR"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:padding="16dp"
+        />
+    <TextView
+        android:id="@+id/object"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View动画之frame动画"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:background="@color/SUCCESS_COLOR"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:padding="16dp"
+        />
+</LinearLayout>

@@ -48,13 +48,10 @@ public class MyRecyclerAdapter  extends RecyclerView.Adapter {
     }
     class MyViewHolder extends RecyclerView.ViewHolder {
         private TextView mv_name;
-  
-
         public MyViewHolder(View itemView) {
             super(itemView);
             mv_name = (TextView) itemView.findViewById(R.id.text_name);
         }
-
         public void setData(int position) {
             Item entity = lists.get(position);
             String name = entity.getEntity().getClassname();
