@@ -3,23 +3,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
+
     <LinearLayout
-        android:paddingTop="16dp"
-        android:paddingBottom="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
-        android:orientation="vertical"
         android:layoutAnimation="@anim/view_enter_in"
-        >
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp">
 
         <ImageView
             android:id="@+id/imageview"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@mipmap/product_icon1"
-            />
+            android:src="@mipmap/product_icon1" />
+
         <TextView
             android:id="@+id/alpha"
             android:layout_width="match_parent"
@@ -55,6 +55,7 @@
             android:text="Translate（位移动画）"
             android:textColor="@color/white"
             android:textSize="16sp" />
+
         <TextView
             android:id="@+id/rotate"
             android:layout_width="match_parent"
@@ -66,6 +67,7 @@
             android:text="Rotate（位置旋转动画）"
             android:textColor="@color/white"
             android:textSize="16sp" />
+
         <TextView
             android:id="@+id/zuhe"
             android:layout_width="match_parent"

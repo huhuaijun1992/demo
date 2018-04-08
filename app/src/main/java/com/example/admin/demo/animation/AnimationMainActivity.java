@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.admin.demo.R;
+import com.example.admin.demo.animation.tweened_animation.Animation_Property_Activity;
 import com.vondear.rxtools.view.RxToast;
 
 import butterknife.BindView;
@@ -53,7 +54,7 @@ public class AnimationMainActivity extends AppCompatActivity {
                 RxToast.normal("程序猿正在抓紧开发中，请期待以后的更新");
                 break;
             case R.id.object:
-                RxToast.normal("程序猿正在抓紧开发中，请期待以后的更新");
+                Animation_Property_Activity.enter(this);
                 break;
         }
     }

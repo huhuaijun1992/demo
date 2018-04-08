@@ -89,6 +89,7 @@
         <activity android:name=".activity.ActivityRxToast"></activity>
         <activity android:name=".animation.AnimationMainActivity"></activity>
         <activity android:name=".animation.Animotion_Tween_Activity"></activity>
+        <activity android:name=".animation.tweened_animation.Animation_Property_Activity" />
     </application>
 
 </manifest>

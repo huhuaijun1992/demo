@@ -36,7 +36,7 @@
         android:id="@+id/object"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="View动画之frame动画"
+        android:text="View动画之属性动画"
         android:textColor="@color/white"
         android:textSize="16sp"
         android:background="@color/SUCCESS_COLOR"
@@ -44,4 +44,12 @@
         android:gravity="center"
         android:padding="16dp"
         />
+   <TextView
+       android:padding="16dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="16dp"
+       android:textSize="16sp"
+       android:text="简介"
+       />
 </LinearLayout>
