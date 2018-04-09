@@ -16,12 +16,13 @@ import com.example.admin.demo.R;
  */
 
 public class ServiceMianActivity extends Activity implements View.OnClickListener{
-    private Button  start,bind,unbind,stop,start_sing,stop_sing;
+    private Button  start,bind,unbind,stop,start_sing,stop_sing,send_message;
     private ServiceTest.MyBinder binder;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.service_main_activity);
+        send_message=(Button)findViewById(R.id.send_message);
         start=(Button)findViewById(R.id.start);
         bind=(Button)findViewById(R.id.bind);
         unbind=(Button)findViewById(R.id.unbind);
@@ -34,7 +35,7 @@ public class ServiceMianActivity extends Activity implements View.OnClickListene
         bind.setOnClickListener(this);
         unbind.setOnClickListener(this);
         stop.setOnClickListener(this);
-
+        send_message.setOnClickListener(this);
 
     }
 
@@ -54,7 +55,6 @@ public class ServiceMianActivity extends Activity implements View.OnClickListene
             case R.id.unbind:
                 intent.setClass(this,ServiceTest.class);
                 unbindService(conn);
-
                 break;
             case R.id.stop:
                 intent.setClass(this,ServiceTest.class);
@@ -65,6 +65,9 @@ public class ServiceMianActivity extends Activity implements View.OnClickListene
                 break;
             case R.id.stop_sing:
                 binder.stopplay();
+                break;
+            case R.id.send_message:
+                binder.sendMessage();
                 break;
         }
     }

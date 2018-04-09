@@ -1,10 +1,14 @@
 package com.example.admin.demo.study.service;
 
+import android.app.Notification;
+import android.app.NotificationManager;
 import android.app.Service;
 import android.content.Intent;
 import android.os.Binder;
 import android.os.IBinder;
 import android.util.Log;
+
+import com.example.admin.demo.R;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -20,7 +24,7 @@ public class ServiceTest extends Service {
     private MyBinder binder = new MyBinder();
     private TimerTask task;
     private Timer timer;
-    private String TAG="demo";
+    private String isTAG="demo";
 
     @Override
     public void onCreate() {
@@ -60,18 +64,34 @@ public class ServiceTest extends Service {
         super.onDestroy();
         Log.i("demo", "onDestroy:==========" + "service destory");
     }
+    //发送一个简单的通知
+    public void sendMessage(){
+        Notification notification=new Notification.Builder(getApplicationContext()).setSmallIcon(R.drawable.icon)
+                .setContentText("这是一个测试通知")
+                .setContentTitle("通知")
+                .build();
+        NotificationManager notificationManager=(NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+        notificationManager.notify(0,notification);
+    }
 
 
     class MyBinder extends Binder {
+
         public void stopplay() {
             isplay=false;
             Log.i("demo", "stopplay:=============停止唱歌 ");
+            Log.i("demo", "stopplay: "+isplay);
+
         }
 
         public void star(String name) {
-            Log.i(TAG, "star: ==================开始唱歌");
+            Log.i("demo", "star: ==================开始唱歌");
         }
 
+        //发送一个简单的通知
+        public void sendMessage(){
+           ServiceTest.this.sendMessage();
+        }
     }
 
 }
