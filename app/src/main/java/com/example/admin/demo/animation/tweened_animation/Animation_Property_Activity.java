@@ -201,7 +201,7 @@ public class Animation_Property_Activity extends AppCompatActivity {
                 ObjectAnimator animator2=ObjectAnimator.ofFloat(list.get(i),"Y", 0F,y);
                 AnimatorSet set=new AnimatorSet();
                 set.playTogether(animator1,animator2);
-                set.setInterpolator(new BounceInterpolator());//设置插值器，BounceInterpolator使得动画具有像小球落在地上回弹一样的效果
+//                set.setInterpolator(new BounceInterpolator());//设置插值器，BounceInterpolator使得动画具有像小球落在地上回弹一样的效果
                 set.setDuration(5000);
                 set.start();
 

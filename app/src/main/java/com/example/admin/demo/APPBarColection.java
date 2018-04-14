@@ -8,11 +8,12 @@ import android.widget.ImageView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-
-/**
- * Created by admin on 2017/5/11.
+ /**
+ @data on $DATES
+ @Author 胡怀俊
+ @email 1130456163@qq.com
+ @describe 添加描述
  */
-
 public class APPBarColection extends Activity {
 
     @BindView(R.id.backdrop)
@@ -27,4 +28,5 @@ public class APPBarColection extends Activity {
         ButterKnife.bind(this);
         toolbar.setTitle("测试下");
     }
+
 }
