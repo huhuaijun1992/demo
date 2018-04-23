@@ -3,7 +3,7 @@ package com.example.admin.demo;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
+
 import android.widget.ImageView;
 
 import butterknife.BindView;
@@ -14,6 +14,7 @@ import butterknife.ButterKnife;
  @email 1130456163@qq.com
  @describe 添加描述
  */
+
 public class APPBarColection extends Activity {
 
     @BindView(R.id.backdrop)

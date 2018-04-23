@@ -1,12 +1,12 @@
 package com.example.admin.demo;
 
 import android.app.Application;
+import android.content.Context;
 import android.content.res.Configuration;
 import android.util.Log;
 
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
-import com.vondear.rxtools.RxTextTool;
 import com.vondear.rxtools.RxTool;
 
 /**
@@ -15,11 +15,13 @@ import com.vondear.rxtools.RxTool;
 
 public class MyApplication extends Application {
     static  final  String TAG="hhj";
+    static  Context context;
     @Override
     public void onCreate() {
         super.onCreate();
         ImageLoader.getInstance().init(ImageLoaderConfiguration.createDefault(this));
         RxTool.init(this);
+        context=getBaseContext();
     }
     @Override
     public void onTerminate() {
@@ -45,4 +47,7 @@ public class MyApplication extends Application {
         super.onConfigurationChanged(newConfig);
     }
 
+    public static Context getContext(){
+        return context;
+    }
 }

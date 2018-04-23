@@ -18,6 +18,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -37,6 +38,7 @@ allprojects {
     }
 }
 dependencies {
+    compile 'com.android.support:multidex:1.0.0'
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
@@ -78,6 +80,10 @@ dependencies {
     provided 'com.readystatesoftware.systembartint:systembartint:1.0.3'
 //    rxtool
     compile 'com.github.vondear:RxTools:v1.7.7.3'//请替换成上方 JitPack 最新的版本号
+    // DiskLruCache缓存
+    compile 'com.jakewharton:disklrucache:2.0.2'
+//okhhttp3
+    compile 'com.squareup.okhttp3:mockwebserver:3.10.0'
 
 }
 

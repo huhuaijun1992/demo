@@ -1,27 +1,20 @@
 package com.example.admin.demo;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 
-import com.example.admin.demo.study.StudyMianActivity;
-import com.example.admin.demo.thridwidget.ThirdWidgetCollectActivity;
-import com.example.admin.demo.utils.StatusBarUtils;
 import com.example.admin.demo.utils.WaterMarkTextUtil;
-import com.example.admin.demo.widget_collect.WidgetCollectActivity;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
 
 public class ProductHomeActivity extends AppCompatActivity {
     @BindView(R.id.widget)
@@ -44,8 +37,6 @@ public class ProductHomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        沉浸式状态栏
-//        StatusBarUtils.setTransparentStatusBar(this);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
         initData();
@@ -69,5 +60,6 @@ public class ProductHomeActivity extends AppCompatActivity {
         list.add(new DataEntity(R.mipmap.product_icon4,"学无止境",3));
         list.add(new DataEntity(R.mipmap.product_icon5,"二维码的相关操作",4));
         list.add(new DataEntity(R.mipmap.product_icon6,"弹窗的艺术",5));
+        list.add(new DataEntity(R.mipmap.product_icon6,"图片的三级缓存优化操作",7));
     }
 }

@@ -15,6 +15,7 @@ import com.example.admin.demo.animation.AnimationMainActivity;
 import com.example.admin.demo.study.StudyMianActivity;
 import com.example.admin.demo.thridwidget.ThirdWidgetCollectActivity;
 import com.example.admin.demo.widget_collect.WidgetCollectActivity;
+import com.example.admin.demo.widget_collect.imageview_collect.CacheImageActivity;
 import com.vondear.rxtools.RxActivityTool;
 
 import java.util.List;
@@ -84,6 +85,9 @@ public class ProdcutHomeAdapter extends RecyclerView.Adapter {
                            break;
                        case 5:
                            ActivityRxToast.enter(activity);
+                           break;
+                       case 6:
+                           CacheImageActivity.enter(activity);
                            break;
 
 

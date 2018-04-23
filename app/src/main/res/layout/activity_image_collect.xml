@@ -20,4 +20,10 @@
         android:layout_height="47dp"
         android:text="图片剪裁（系统自带）" />
 
+    <Button
+        android:id="@+id/cache_image"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:text="图片三级缓存策略" />
+
 </LinearLayout>

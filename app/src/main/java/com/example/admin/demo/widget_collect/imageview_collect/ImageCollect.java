@@ -25,6 +25,8 @@ public class ImageCollect extends Activity {
     Button compressImage;
     @BindView(R.id.crop_image)
     Button cropImage;
+    @BindView(R.id.cache_image)
+    Button cacheImage;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -42,7 +44,7 @@ public class ImageCollect extends Activity {
     }
 
 
-    @OnClick({R.id.photo_broaswer, R.id.compress_image,R.id.crop_image})
+    @OnClick({R.id.photo_broaswer, R.id.compress_image, R.id.crop_image, R.id.cache_image})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.photo_broaswer:
@@ -55,8 +57,11 @@ public class ImageCollect extends Activity {
                 break;
             case R.id.crop_image:
                 CropImageActivity.startactivity(this);
-
                 break;
+            case R.id.cache_image:
+                CacheImageActivity.enter(this);
+                break;
+
         }
     }
 

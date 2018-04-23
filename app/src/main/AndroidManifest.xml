@@ -72,6 +72,7 @@
         //图片
         <activity android:name=".widget_collect.imageview_collect.ComPressImageActivity" />
         <activity android:name=".widget_collect.imageview_collect.CropImageActivity" />
+        <activity android:name=".widget_collect.imageview_collect.CacheImageActivity"/>
         //滑动
         <activity android:name=".study.scrollview.ScollViewActivity" />
         <activity android:name=".study.scrollview.ScrollviewWithListernerActivity" />
@@ -90,6 +91,7 @@
         <activity android:name=".animation.AnimationMainActivity"></activity>
         <activity android:name=".animation.Animotion_Tween_Activity"></activity>
         <activity android:name=".animation.tweened_animation.Animation_Property_Activity" />
+
     </application>
 
 </manifest>
